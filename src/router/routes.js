@@ -6,9 +6,6 @@ const routes = [
   {
     path: '/',
     component: () => import('layouts/default'),
-    meta: {
-      requiresAuth: true
-    },
     children: [{ path: '/home', component: () => import('pages/index') }]
   },
 
