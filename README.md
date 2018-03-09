@@ -14,4 +14,4 @@ Download this repository, paste their files into your quasar project and run:
 
 Or
 
-`$ yarn add`
+`$ yarn install`
