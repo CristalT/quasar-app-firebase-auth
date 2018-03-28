@@ -4,8 +4,14 @@
           <div class="mid-bg"></div>
           <div class="login-card shadow-4 bg-white">
             <h5 class="login-title">LOGIN</h5>
-            <q-input float-label="Email" v-model="user.email"/>
-            <q-input type="password" float-label="Password" v-model="user.password"/>
+            <div class="row gutter-md">
+              <div class="col-xs-12">
+                <q-input float-label="Email" v-model="user.email"/>            
+              </div>
+              <div class="col-xs-12">
+                <q-input type="password" float-label="Password" v-model="user.password"/>            
+              </div>
+            </div>
             <div class="text-center" style="margin-top: 30px">
               <q-btn color="primary" @click="login">LOGIN</q-btn>  
             </div>
