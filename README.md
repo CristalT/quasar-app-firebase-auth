@@ -10,7 +10,7 @@ https://quasar-framework.org/guide/quasar-upgrade-guide.html
 
 ## Installation
 
-`$ quasar init <folder-name>`
+`$ git clone https://github.com/CristalT/quasar-app-firebase-auth.git <folder-name>`
 
 Download this repository, paste their files into your quasar project and run:
 
@@ -21,8 +21,8 @@ Or
 `$ yarn`
 
 
-Replace the config values of your firebase app into file src/plugins/env-example.json and
-rename it as "env.json"
+Replace the config values of your firebase app into file `src/plugins/env-example.json` and
+rename it as **env.json**
 
 ```
   apiKey: "...",
