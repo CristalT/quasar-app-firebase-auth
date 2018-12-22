@@ -41,7 +41,7 @@ export default {
                     this.$q.dialog({
                         title: 'Error',
                         message:
-                            'An error has ocurred while login in. Check your login data.'
+                            'An error has ocurred while login in. Check your user data.'
                     })
                 })
         }
