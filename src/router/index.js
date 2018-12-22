@@ -15,12 +15,10 @@ Router.beforeEach((to, from, next) => {
   const currentUser = AUTH.currentUser
   const requiresAuth = to.matched.some(record => record.meta.requiresAuth)
 
-
   if (requiresAuth && !currentUser) next('/login')
   else if (!requiresAuth && currentUser) next('/')
   else next()
 })
-
 
 export default Router
 

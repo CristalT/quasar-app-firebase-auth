@@ -4,6 +4,10 @@ Made with Quasar Framework v0.15.6
 
 Quasar CLI Documentation http://quasar-framework.org/guide/quasar-cli.html
 
+Feel free to upgrade Quasar version following next Upgrade Guide
+https://quasar-framework.org/guide/quasar-upgrade-guide.html
+
+
 ## Installation
 
 `$ quasar init <folder-name>`
