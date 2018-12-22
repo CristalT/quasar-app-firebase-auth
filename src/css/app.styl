@@ -1,28 +1,32 @@
 @import '~variables'
+
 #login
   .mid-bg
-    background: $primary
+    background $primary
     height 50vh
     position fixed
     top 0
     left 0
     width 100%
+
   .login-card
-    padding: 50px
-    width: 40%
+    padding 50px
+    width 40%
     margin 0 auto
     position fixed
     top 50%
     transform translate(-50%, -50%)
     left 50%
+
     @media (max-width: 400px)
       padding 20px
       width 90%
+
     @media (max-width: 1000px)
       width 80%
+
     .login-title
-      color rgba(0,0,0,0.5)
+      color rgba(0, 0, 0, .5)
       font-weight bold
       text-align center
       padding-bottom 20px
-
