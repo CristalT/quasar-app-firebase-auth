@@ -9,11 +9,19 @@
             <q-input float-label="Email" v-model="user.email"/>
           </div>
           <div class="col-xs-12">
-            <q-input type="password" float-label="Password" v-model="user.password"/>
+            <q-input
+              type="password"
+              float-label="Password"
+              v-model="user.password"
+              @keyup.enter="login"
+            />
           </div>
         </div>
         <div class="text-center" style="margin-top: 30px">
-          <q-btn color="primary" @click="login">LOGIN</q-btn>
+          <q-btn color="primary" @click="login">
+            <span v-if="!loading">LOG IN</span>
+            <q-spinner-dots v-else/>
+          </q-btn>
         </div>
       </div>
     </div>
@@ -21,9 +29,14 @@
 </template>
 
 <script>
+import { QSpinnerDots } from 'quasar'
 export default {
+    components: {
+        QSpinnerDots
+    },
     data() {
         return {
+            loading: false,
             user: {
                 email: '',
                 password: ''
@@ -31,8 +44,9 @@ export default {
         }
     },
     methods: {
-        login() {
-            this.$auth
+        login: async function() {
+            this.loading = true
+            await this.$auth
                 .signInWithEmailAndPassword(this.user.email, this.user.password)
                 .then(() => {
                     this.$router.push('/')
@@ -44,6 +58,7 @@ export default {
                             'An error has ocurred while login in. Check your user data.'
                     })
                 })
+            this.loading = false
         }
     }
 }
