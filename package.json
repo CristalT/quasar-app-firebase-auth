@@ -10,10 +10,10 @@
     "test": "echo \"No test specified\" && exit 0"
   },
   "dependencies": {
-    "firebase": "^4.11.0"
+    "firebase": "^5.8.0"
   },
   "devDependencies": {
-    "quasar-cli": "^0.15.9"
+    "quasar-cli": "^0.17.23"
   },
   "engines": {
     "node": ">= 8.9.0",

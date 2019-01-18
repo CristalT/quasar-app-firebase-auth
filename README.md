@@ -1,10 +1,10 @@
 # Quasar App + Firebase Auth
 
-Made with Quasar Framework v0.15.6
+Made under Quasar Framework v0.17.23
 
 Quasar CLI Documentation http://quasar-framework.org/guide/quasar-cli.html
 
-Feel free to upgrade Quasar version following next Upgrade Guide
+If you need, you can upgrade Quasar version following next Upgrade Guide
 https://quasar-framework.org/guide/quasar-upgrade-guide.html
 
 
