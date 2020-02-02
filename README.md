@@ -1,4 +1,4 @@
-# Quasar App + Firebase Auth
+# Fork of Quasar App + Firebase Auth
 
 Made under Quasar Framework v0.17.23
 
@@ -10,7 +10,7 @@ https://quasar-framework.org/guide/quasar-upgrade-guide.html
 
 ## Installation
 
-`$ git clone https://github.com/CristalT/quasar-app-firebase-auth.git <folder-name>`
+`$ git clone https://github.com/Feli87/quasar-app-firebase-auth.git`
 
 Download this repository, paste their files into your quasar project and run:
 
@@ -33,3 +33,5 @@ rename it as **env.json**
   messagingSenderId: "..."
   
 ```
+
+# Sir.FelipeXXII
